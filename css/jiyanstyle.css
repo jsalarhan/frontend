@@ -1,0 +1,238 @@
+/*
+author: Hamit Mızrak
+date: 31 Temmuz 2022 
+*/
+
+/*
+    bilgisayarda RGB:Red Green Blue
+    00:Siyah   ff:beyaz
+    */
+/* background-color */
+p {
+    background-color: red;
+    background-color: #523;
+    /*RGB */
+    background-color: #123456;
+    /*RGB ancak daha hassas*/
+    background-color: rgb(0, 100, 255);
+    /* 0<=X<=255*/
+    background-color: rgba(0, 100, 255, 0.8);
+    /*0<=a<=1 0<=X<=255*/
+    background-color: rgba(0, 100, 255, .8);
+    /*0<=a<=1 0<=X<=255*/
+    background-color: #523;
+    /*RGB */
+    background-color: #123456;
+    /*RGB ancak daha hassas*/
+    background-color: rgb(0, 100, 255);
+    /* 0<=X<=255*/
+    background-color: rgba(0, 100, 255, 0.8);
+    /*0<=a<=1 0<=X<=255*/
+    background-color: rgba(0, 100, 255, .8);
+    /*0<=a<=1 0<=X<=255*/
+
+    /*color */
+    color: white;
+    color: white;
+
+    /*
+    margin:dış boşluk
+    Saat dönme yönünde devame eder.
+    */
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+    margin-left: 15.5px;
+
+    /* kısaltılmış hali*/
+    margin: 10px 15px 25px 15.5px;
+
+    /*yukardan-sağdan-aşağıdan-soldan 10 px*/
+    margin: 10px;
+
+    /*
+    15px: yukarıdan-aşağıdan 
+    12px:sağdan-solda */
+    margin: 15px 12px;
+
+
+    /*
+    padding:iç boşluk
+    Saat dönme yönünde devame eder.
+    */
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    padding-left: 15.5px;
+
+    /* kısaltılmış hali*/
+    padding: 10px 15px 25px 15.5px;
+
+    /*yukardan-sağdan-aşağıdan-soldan 10 px*/
+    padding: 10px;
+
+    /*
+    15px: yukarıdan-aşağıdan 
+    12px:sağdan-solda */
+    padding: 15px 12px;
+
+    /*
+15px: yukarıdan-aşağıdan 
+12px:sağdan-solda */
+    padding: 15px 12px;
+
+
+    /* border: çerceve */
+    border-width: 1px;
+    border-style: dotted;
+    border-color: orange;
+
+    /*3 özelliği tek satırda göstermek*/
+    border: 1px solid orange;
+
+    /*border-radius:AÇI*/
+    /* border-radius: 50%; */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+
+    /*4 özelliği tek satırda göstermek*/
+    border-radius: 50%;
+
+
+    /*font */
+    font-size: 25px;
+    font-size: x-large;
+    font-weight: 900;
+    /* agırlıgı yogunlugu*/
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* olma ihtimaline göre gösteriyor.*/
+
+
+    /* text metin yazı ile ilgiili*/
+    text-align: left;
+    text-align: right;
+    text-align: center;
+    text-align: justify;
+    /* sag sola yaslamak için kullanıyor*/
+    text-transform: lowercase;
+    /* tum hepsini kücük */
+    text-transform: uppercase;
+    /* hepsini büyük yapıor/*/
+    text-transform: capitalize;
+
+    text-decoration: underline;
+    /*metinin altını çizmek için*/
+
+
+
+
+
+
+
+    word-spacing: 30px;
+    /*kelimeler arası bosluk*/
+    letter-spacing: 12;
+    /*harfler arasındanda bosluklar*/
+    line-height: 10;
+    /**/
+    text-shadow: 1px 8px rgba(0, 100, 255, .8);
+    /* X düzleminde saga dogu oluyor eger - verirsek sola dogru oluyorgölgelendirme yapmak için*/
+
+    column-count: 2;
+    /* metni bolmek için kullanıuoy */
+    -webkit-column-count: 2;
+    /* diger programlarda da calışması için kullanıyor*/
+    -moz-column-count: 2;
+    /*mozilla ugulasaıda calısması için*/
+    column-rule: 2px solid royalblue;
+
+
+
+
+
+}
+
+
+.click_css {
+    display: inline;
+    /* satır*/
+    display: block;
+    /* alt satır*/
+    display: none;
+    display: inline-block;
+    visibility: none;
+
+    visibility: hidden;
+
+}
+
+.div_class {
+    /* birden fazla kullanırsak class kullanılıyor*/
+    background-color: red;
+    color: blue;
+    width: 25%;
+    height: 150px;
+    min-height: 150px;
+    /* min 150px ve yukarsı */
+    max-height: 200px;
+    /*max 150 px en fazla 150px kadar olabilir.*/
+
+    display: inline-block;
+    /* sagdan mı soldan mı gelecegeni beliliyor*/
+    float: left;
+    margin-left: 1%;
+
+
+}
+
+.clearfix_data::before {
+    /* öncesini temizlemek için kullanıyoruz*/
+    content: "";
+    clear: both;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    background-color: bisque;
+    color: aqua;
+    padding: 2px 4px;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    display: inline-block;
+    border-radius: 1%;
+}
+
+a:hover {
+    background-color: orange;
+    color: blue;
+}
+
+a:visited {
+    background-color: #523;
+    color: aliceblue;
+}
+
+/* selector*/
+div,
+p {
+    /*tum divler ve tum p ler*/
+    border: 2px solid blue;
+    margin-top: 5px;
+
+}
+
+* { /*tüm hepsimi kapsıyor*/
+    box-sizing: content-box;
+    box-sizing: border-box;
+    /*width +padding+bordeer*/
+    box-sizing: border-box;
+    /* height=height+padding+borde*/
+    margin: 0;
+    padding: 0px;
+
+
+}

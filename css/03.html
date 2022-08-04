@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        #box_shadow_id {
+            background-color: aqua;
+            width: 25%;
+            min-height: 60px;
+            box-shadow: 1 px 1px 4px 1px rgba(red, green, blue, alpha);
+        }
+        #box_shadow_id:hover{
+            background-color:red ;
+            width: 50%;
+            transition: 2s all; /* tüm hepsini 2 s da bitir*/
+            transform: rotate(30deg);/* acı vererk degişimini saglıyor*/
+            cursor: pointer;
+        }
+
+    </style>
+
+    <div id="box_shadow_id"></div>
+</body>
+
+</html>

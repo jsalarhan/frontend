@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-<link rel="shortcut icon" href="../images/indir.jpg" type="image/x-icon">
 
 <head>
     <title>Templates Html5 Css3 JS</title>
@@ -38,51 +37,37 @@
 
     <!-- external js -->
     <script src="index.js"></script>
+<!-- internal css: sadece o sayfanının bütünde çalışır -->
+<style>
+    h6 {
+        color: orange;
+    }
+</style>
+
 </head>
 
 <body class="bg-dark text-white m-5">
-    <!-- start codes -->
+<!-- start codes -->
+<!-- 
+    CSS3:Cascading Style Sheets (Basamaklı Stil Şablonları)
+    css comment: /* */
+    Syntax:
+    KEY:VALUE;
+    background-color:red;
+    Overrides:
+    !important > inlineCSS > internalCSS > externalCSS 
+ -->
+<!-- inline CSS: sadece o satır için geçerlidir. -->
+ <p style="color:blue;">Lorem ipsum dolor sit amet.</p>
 
-    <!-- Table: database veya api gelen verileri düzenli olarak göstermek kullanırız. -->
-    <h6>Table List</h6>
-    <hr />
-    <meta charset="utf-6">
+ <!-- important -->
+<h6 style="color:blue!important;">item 1</h6>
+<h6>item 2</h6>
+<h6>item 3</h6>
 
-    <p>&#128512;</p>
-    <p>&#128525;</p>
-    <p>&#128507;</p>
-    <p>&#128513;</p>
-
-
-
-
-    <br />
-    <hr />
-
-    <iframe id="iframe" src="https://akademi.ecodation.com/" width="100%" height="400" frameborder="0"></iframe>
-    <video width="320 " height="240" controls>
-        <source src="movie.ogg" type="video/ogg">
-
-        <source src="" type="">
-    </video>
-    <audio controls>
-        <source src="horse.ogg" type="audio/ogg">
-        <source src="horse.mp3" type="audio/mpeg">
-    </audio>
-
-
-    <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0"
-            marginwidth="0"
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
-    </div>
-
-
-
-    <!-- end codes -->
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<!-- end codes -->
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 </body>
-
 </html>

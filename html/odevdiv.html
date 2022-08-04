@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Templates Html5 Css3 JS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- seo -->
+    <meta name="keywords" content="html5,css3,js,jquery,bootstrap,react,javase" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- react libraries -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <!-- <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+                 <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+             -->
+
+    <!-- external css -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- external js -->
+    <script src="index.js"></script>
+
+    <!-- favicon 19X19 -->
+    <link rel="shortcut icon" href="../images/flower-gf444320a7_1920.jpg" type="image/x-icon">
+    <style>
+        #password {
+            width: 100%;
+            margin: 8px 0px;
+            outline: none;
+            padding: 8px;
+            box-sizing: border-box;
+            transition: 0.5s;
+
+        }
+        #name {
+            width: 50%;
+            margin: 8px 0px;
+            outline: none;
+            padding: 8px;
+            box-sizing: border-box;
+            transition: 0.5s;
+            text-align: center;
+
+        }
+        #lastname {
+            width: 50%;
+            margin: 8px 0px;
+            outline: none;
+            padding: 8x;
+            box-sizing: border-box;
+            transition: 0.5s;
+
+            text-align: center;
+
+        }
+        #email {
+            width: 100%;
+            margin: 8px 0px;
+            outline: none;
+            padding: 8px;
+            box-sizing: border-box;
+            transition: 0.5s;
+            text-align: center;
+
+        }
+
+        #divler {
+            position: relative;
+        }
+
+        #icons {
+            position: absolute;
+            left: 10;
+            top: 8px;
+            padding: 9px 8px;
+
+        }
+        #register
+        {
+            position: relative;
+            width: 780px;
+            margin: 2% auto;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white m-5">
+    <!-- start codes -->
+
+    <!-- 
+     utf-8 ekleyelim 
+     <meta charset="utf-8"> 
+     -->
+    <form action="#" method="" id="register" enctype="multipart/form-data" autocomplete="on">
+        <div id="divler">
+            <input type="text" name="name" id="name" required placeholder="First name.." />
+
+
+        
+            <input type="text" name="username" id="lastname" required placeholder="lastName.." />
+        </div>
+
+        <div id="divler">
+            <input type="text" name="username" id="username" required placeholder="UserName.." />
+        </div>
+        <div id="divler">
+            <input type="email" name="email" id="email"  required placeholder="Lütfen emaili giriniz..." />
+        </div>
+        <div id="divler">
+            <input type="password" name="password" id="password" required placeholder="Lütfen şifreyi giriniz..." />
+            <i class="fa-solid fa-toggle-off" aria-hidden="true" id="icons"></i>
+        </div>
+        <div id="divler">
+            <input type="checkbox" name="yaz" id="yaz" value="yaz">
+            ı agree with the
+            <bold>Terms and Conditions</bold> and the <bold>Privacy Policy</bold>
+
+        </div>
+        <div id="divler">
+            <button type="submit" name="submit" id="submit" style="width: 100%">
+                Create Account
+            </button>
+        </div>
+
+    </form>
+    <!-- end codes -->
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

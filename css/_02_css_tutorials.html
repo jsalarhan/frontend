@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Templates Html5 Css3 JS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="html5,css3,js,jquery,bootstrap,react,javase" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-white m-5">
+<!-- start codes -->
+
+
+
+<header></header>
+<nav></nav>
+<main><section></section></main>
+<footer></footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+#box_shadow_id{
+    background-color:red;
+    width: 24%;
+    min-height: 60px;
+    /*
+    0.8px: X yönünde
+    0.9px: Y yönünde
+    4px  :Blur ,puslu
+    1px  :Blur boyutu
+    */
+    box-shadow: 0.8px 0.9px 4px 1px rgba(255,255,255,.8);
+}
+#box_shadow_id:hover{
+    background-color:blue;
+    width: 49%;
+    transition: 2s all;
+    transform:rotate(30deg);
+    cursor: pointer;
+}
+</style>
+<!-- <div id="box_shadow_id"></div> -->
+
+
+<!-- <ul>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+</ul> -->
+
+<style>
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    color:red;
+    display:inline-block;
+    background-color: black;
+    padding:0 4px;
+    margin:1px;
+}
+li:hover{
+    color:black;
+    background-color: red;
+    cursor: pointer;
+}
+/*odd: tek olan*/
+ul >li:nth-of-type(odd){
+    color:blue;
+}
+/*even:çift olan*/
+ul>li:nth-of-type(even){
+    color:purple;
+}
+
+ul li:first-child{
+    background-color: dodgerblue;
+}
+
+ul li:last-child{
+    background-color: brown;
+}
+</style>
+
+
+<!-- 
+Selector:Seçiciler
+1-)Group Selector 
+-->
+<!-- 
+    Group Selector 
+* ==> bütün tagler seç
+p ==> tüm p seç
+div,p ==> tüm div'ler ve tüm p seç
+div>p ==> parent'i div olacak bütün p olan child olan p'ler seç
+div~p ==> div ile p aynı seviyede olacak Tüm p'ler  seç
+div+p ==>div ile p aynı seviyede olacak sadece 1 tane p seç 
+-->
+<style>
+
+/*div,p{
+    border:2px solid blue;
+    margin-top:5px;
+} 
+div>p{
+    border:2px solid blue;
+    margin-top:5px;
+}*/
+/*div~p{
+    border:2px solid blue;
+    margin-top:5px;
+}*/
+
+div~p{
+    border:2px solid blue;
+    margin-top:5px;
+}
+</style>
+
+
+<<div>sadece div-1</div>
+<div>sadece div-2</div>
+<p>paragraf-1</p>
+<div>
+    <p>paragraf-2</p>
+    <p>paragraf-3</p>
+</div>
+<p>paragraf-4</p>
+
+<!-- <a href="#">Click 1</a>
+<a href="#">Click 1</a>
+<a href="#">Click 1</a> -->
+
+<!-- <div class="div_class">1</div>
+<div class="div_class">2</div>
+<div class="div_class">3</div> -->
+
+
+<!-- <a href="#!" class="click_css">Click 1</a>
+<a href="#!" class="click_css">Click 2</a>
+<p id="paragraf_id"> <span id="specialLetter">Lorem</span>  ipsum dolor sit, amet consectetur 44 adipisicing elit. Velit fugit sit nesciunt, incidunt fuga
+    quo perspiciatis consequuntur sint quisquam distinctio, atque eveniet consectetur adipisci? Aperiam illum natus
+    error sit ullam.
+Nam a minus quod commodi earum soluta adipisci, debitis sit magni sapiente! Consequatur, nobis laudantium explicabo delectus tempora omnis libero quis ad blanditiis quidem. Quasi, eaque. Quasi vero accusamus voluptatem.</p> -->
+
+<!-- end codes -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
