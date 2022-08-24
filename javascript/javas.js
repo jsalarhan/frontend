@@ -1,3 +1,135 @@
+
+const dizi2=[1,2,3,4,5,6,7,8,9]
+let diziFunction18=()=>{
+    let newData=dizi2.map((value)=>{
+return value*2;
+    })
+    console.log(newData)
+}
+
+//diziFunction18()
+
+
+
+
+
+
+
+
+let diziFunction20=()=>{
+
+const person={
+    adi:"jiyan",
+    soyadi:"salarhan",
+    numara:1212,
+    isLogin:true,
+    jsTeknolojiler:['jqery','react','angular'],
+javaTeknolojileri:{
+    adi:"javase",
+    yıl:"1990"
+},
+frontend:function(){
+    return `${this.javaTeknolojileri.adi} ${this.numara}`;
+},
+backend:function(){
+    return`${this.adi} ${this.soyadi}`
+}
+};
+//person.meslek="bilgisayar öğretmeni";
+//console.log(person.adi);
+//console.log(person.soyadi.toLocaleUpperCase());
+
+console.log(`adi:${person.adi} soyadi:${person.soyadi} 
+java:${person.jsTeknolojiler[0]}
+frontend:${person.frontend()}
+
+`);
+console.log(person.backend());
+
+
+}
+//diziFunction20()
+
+// call Apply Bind ==> 
+// Bir fonksiyonun farklı objelerde kullanmaya yarar.
+// Fonksiyonun dışardan bir obje verisine bağladım.
+// parametreli ve parametresiz kullanım söz konusudur.
+// call ile apply aynıdır sadece parametrelide kullanımlarında dizi yazmak
+// bind ise bir fonksiyon olarak döndürmemiz gerekir. ancak call ve apply direk çağırır.
+
+//1.YÖNTEM PARAMETRESIZ
+//FONKSIYON
+// let callApplyBindFunctionWithoutParam= function(){
+//     document.writeln(`Merhabalar: ${this.adi} <br/>`);
+// }
+//objeye bağlamak: call ile apply parametresizde kullanımları aynı
+// bind ise bize bir değer döndermek için bir fonksiyonda yazmamız gerekir.
+//OBJECT
+// let objectData1={adi:'Hamit'};
+
+// callApplyBindFunctionWithoutParam.call(objectData1);
+
+// callApplyBindFunctionWithoutParam.apply(objectData1);
+
+// let newBindFuctionWithoutParam=callApplyBindFunctionWithoutParam.bind(objectData1);
+// newBindFuctionWithoutParam();
+
+// document.writeln(`**********************<br/>`)
+
+///////////////////////////////////////////////////////////////////////////
+//2.YÖNTEM PARAMETRELI 
+//parametrelide call ile apply arasındaki fark [] yazmak veya yazmamak
+//FONKSIYON
+// let callApplyBindFunctionParam= function(x,y){
+//     document.writeln(`Merhabalar: ${this.adi} X:${x} Y:${y}<br/>`);
+// }
+
+// let objectData2={adi:'Hamit'}; 
+
+// callApplyBindFunctionParam.call(objectData2,'Java',"nodejs");
+
+// //apply'da veriler dizi içinde gösterilir
+// callApplyBindFunctionParam.apply(objectData2,['Java',"nodejs"]);
+
+// let newBindFuctionParam=callApplyBindFunctionParam.bind(objectData2,'Java',"nodejs");
+// newBindFuctionParam();
+///////////////////////////////////////////
+let sum=()=>{
+    setInterval(function () {
+    console.log("Merhabalar")
+    }, 500)
+
+}
+///////////////////////////////////////////
+//DOM
+function parag() {
+    // document.getElementById("p_id").innerHTML="<b>Değişti</b>";
+    //document.getElementById("p_id").innerText="<b>Değişti</b>";
+    //document.getElementsByClassName("p_class")[0].innerHTML="<b>Değişti</b>";
+    //document.getElementsByName("p_name")[0].innerHTML="<b>Değişti</b>";
+    document.getElementsByTagName("p")[0].innerHTML = "<b>Değişti</b>";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const number1=Number(prompt("lutfen birinci sayı giriniz?"))
 // console.log(number1)
 // const number2=Number(prompt("lutfen ikinci sayı giriniz?"))
@@ -199,7 +331,7 @@ let diziFunction7 = () => {
 
 let diziFunction8 = () => {
 
-  //  const dizi1 = [11,"veri",52,60, "java", "roza", 22, 33, 44, 55, 66, 77, 88, 99]
+    //  const dizi1 = [11,"veri",52,60, "java", "roza", 22, 33, 44, 55, 66, 77, 88, 99]
     // const dizi2=[10,20,30,100,200];
     // const dizi3=dizi1+dizi2;
     // console.log(dizi3);
@@ -209,15 +341,15 @@ let diziFunction8 = () => {
 
     // const dizi4=dizi1.concat(dizi2);
     // console.log(dizi4);
-     //console.log(typeof dizi4);
+    //console.log(typeof dizi4);
 
-     //delete dizi1[0];
+    //delete dizi1[0];
     //  let dizi2=dizi1.slice(2);
     //  console.log(dizi2);
-//let dizi3=dizi1.slice(1,dizi1.length);
-//console.log(dizi3);
-// console.log(dizi1.splice(3,3,'merhaba'));
-// console.log(dizi1);
+    //let dizi3=dizi1.slice(1,dizi1.length);
+    //console.log(dizi3);
+    // console.log(dizi1.splice(3,3,'merhaba'));
+    // console.log(dizi1);
 
 
 
@@ -226,19 +358,153 @@ let diziFunction8 = () => {
 
 //arrow function ile filter 
 
-    const dizi1 = [11,52,60, 22, 33, 44, 55, 66, 77, 88, 99]
-    let diziFunction16 = () => {
-document.writeln("<br>"+dizi1);
-let result1=dizi1.filter((value)=>{
-return value %2==0;
+//     const dizi1 = [11,52,60, 22, 33, 44, 55, 66, 77, 88, 99]
+//     let diziFunction16 = () => {
+// document.writeln("<br>"+dizi1);
+// let result1=dizi1.filter((value)=>{
+// return value %2==0;
 
-});
-let result2=dizi1.filter((value)=>{
-    return value %2==1;
-    
-    });
+// });
+// let result2=dizi1.filter((value)=>{
+//     return value %2==1;
 
-document.write("<br>"+"çift sayılar====>"+result1);
-document.write("<br>"+"tek sayılar ====>"+result2);
-    }
-    diziFunction16()
+//     });
+
+// document.write("<br>"+"çift sayılar====>"+result1);
+// document.write("<br>"+"tek sayılar ====>"+result2);
+//     }
+//     diziFunction16()
+
+
+// //y =3x+4k 
+// let x=prompt("3 ile carpılanbir sayı giriniz");
+
+// let k=prompt("4 ile carpılan sayı giriniz");
+
+// let toplam=(3*x)+(4*k);
+// document.write("toplam sonuc"+toplam);
+// console.log("sonuc"+toplam);
+
+
+// let k=prompt("fahrenhayta sayı giriniz");
+// let toplam=(k*9/5)+32;
+// document.write("toplam sonuc"+toplam);
+//  console.log("sonuc"+toplam);
+
+// async function dene()
+// {
+//     return "deneme"
+
+// }
+// let dene=(adi,soyadi)=> {
+// return "adı ve soyad"+adi+""+soyadi;
+// }
+// // let don=dene("jiyan","sala");
+// console.log("jiyan","sala");
+// function dene(){
+//     console.log("normal")
+// }
+// dene();
+// let dene2=function(){
+//     console.log("annymous")
+// }
+// dene2()
+//  let dene3=()=>{
+//      console.log("arrow")
+//  }
+//  dene3();
+//immedia function
+//(function(){console.log("roza")})();
+
+// (function(sayi){
+//     console.log("sayı ussu");
+//     console.log(Math.pow(sayi,2))
+
+// })(4)
+// let dene=(sayi)=>{
+//     console.log("sayı ussu");
+//     console.log(Math.pow(sayi,2))
+// }
+// dene(5)
+// function dene(number){
+//     console.log(Math.pow(number,2));
+// }
+// function dene2(){
+//     const data1=Number(prompt("bir sayı giriniz"))
+//     console.log(Math.pow(data1,2));
+// }
+// dene2()
+// function data(number){
+//     console.log(Math.pow(number,2));
+// }
+// function data2(callback){
+//     const userData=Number(prompt("bir sayı giriniz"));
+//     callback(userData)
+// function data1() {
+//     document.write("bir sayı giriniz")
+
+// }
+// function data2() {
+//     document.write("<br>" + "ikinci sayı giriniz");
+// }
+// setTimeout(data2, 5000);
+// setTimeout(data1, 2000);
+
+// setTimeout(function sure() { document.write("bir sayı giriniz") }, 4000)
+
+// setTimeout(() => {
+//     document.write("<br>" + "arrow settime");
+// }, 7000);
+// let data=()=>{
+//  const sayi=Number(prompt("bir sayı giriniz"))
+//  let sonuc=(sayi==1)?"sayi1dir":"farklı sayıdır";
+// console.log(sonuc)
+
+// }
+// data()
+// function data2() {
+//     const sayi = Number(prompt("bir sayı giriniz"))
+// switch(sayi){
+//     case 1:
+//         console.log("sayi 1")
+//         break;
+//         case 2:
+//             console.log("sayi 2")
+//             break;
+//             default:
+//                 console.log("sayi farklı");
+//                 break;
+// }
+
+// }
+// data2()
+
+//////async ödev////////////
+// function merhaba() {
+
+//     return new Promise(basarili=> basarili('merhaba sınıf'))
+// }
+// const text = merhaba()
+
+// text.then(basarili => console.log(basarili))
+
+
+///kendini kendini cagıran fonsiyonla asyn ve await yapınca
+// (async()=>{
+
+//     async function merhaba() {
+
+//           return 'merhaba sınıf'
+        
+//         }
+//         const text = await merhaba()
+//         console.log(text)
+        
+// })()
+async function merhaba() {
+
+              return 'merhaba sınıf'
+            
+            }
+            const text = merhaba()
+            text.then(basarili => console.log(basarili))
