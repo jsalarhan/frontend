@@ -8,9 +8,8 @@ return value*2;
 }
 
 //diziFunction18()
-
-
-
+let result3=document.getElementById("h_id");
+result3.addEventListener("click",function() {alert("merhaba")},false);
 
 
 
